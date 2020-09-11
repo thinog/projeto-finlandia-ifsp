@@ -1,0 +1,31 @@
+http://www.momondo.com.br/inspiracao/14-fatos-sobre-a-finlandia/
+https://finland.fi/pt/vida-amp-sociedade/manual-de-costumes-finlandeses-um-guia-de-comportamento/
+
+Index OK
+
+Visão Geral OK
+1. Mostrar um mapa geográfico de localização do destino OK
+4. Idioma, moeda, variação cambial considerando Dólar e Reais OK
+
+Viaje OK
+2. Roteiro para saída de São Paulo/SP considerando 7 dias de viagem OK
+8. Apresentar custos de aéreo para deslocamento a partir de São Paulo/SP OK
+
+Atrações OK
+3. Melhores e principais atrações OK
+
+Dicas ok
+5. Apresentar dicas de gastronomia ok
+6. Apresentar dicas de hospedagem ok
+7. Apresentar dicas gastos com transporte local ok
+
+Costumes OK
+10. Mostrar os principais costumes locais e dicas para não se desrespeitar OK
+
+Curiosidades OK
+11. Mostrar particularidades ou curiosidades OK
+
+Fale conosco OK
+9. Apresentar uma página para “Fale conosco” com validações em Javascript OK
+
+Easter egg (neve) OK

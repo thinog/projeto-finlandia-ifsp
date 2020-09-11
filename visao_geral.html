@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!-- JQuery e JS do Bootstrap -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- CSS do Bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Fonte Ubuntu -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<!-- Meu script JS/JQuery -->
+		<script src="scripts/script.js"></script>
+		<script src="scripts/snowfall.jquery.js"></script>
+		<!-- Meus estilos CSS -->
+		<link href="css/estilo.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<title>Visite a Finlândia</title>
+	</head>
+	<body>
+		<div class="cabecalho">
+			<nav class="navbar navbar-light">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#itens">
+							<span class="sr-only">Opções</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Finlandia">
+						</a>
+					</div>
+					<div class="navbar-collapse collapse navHeaderCollapse" id="itens">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="visao_geral.html">Visão Geral</a></li>
+							<li><a href="viaje.html">Viaje</a></li>
+							<li><a href="atracoes.html">Atrações</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dicas <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="dicas.html#gastronomia">Gastronomia</a></li>
+									<li><a href="dicas.html#hospedagem">Hospedagem</a></li>
+									<li><a href="dicas.html#transporte">Transporte local</a></li>
+								</ul>
+							</li>
+							<li><a href="costumes.html">Costumes</a></li>
+							<li><a href="curiosidades.html">Curiosidades</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container" id="principal">
+			<div class="row" id="div-titulo">
+				<h1 class="text-center" id="titulo">Visão Geral</h1>
+			</div>
+			<div class="row text-center" id="descricao">
+				<h2>O que é a Finlândia?</h2><br>
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+					<p>Finlândia, oficialmente República da Finlândia, é um país nórdico situado na região da Fino-Escandinávia, no norte da Europa. Faz fronteira com a Suécia a oeste, com a Rússia a leste e com a Noruega ao norte, enquanto a Estônia está ao sul através do Golfo da Finlândia. A capital do país é Helsinque. Cerca de 5,5 milhões de pessoas vivem na Finlândia (2014), sendo que a maior parte da população está concentrada no sul do país. É o oitavo maior país da Europa em extensão e o país menos densamente povoado da União Europeia. A língua materna de quase toda a população é o finlandês, e o suéco é a segunda língua.</p>
+				</div>
+			</div>
+			
+			<div class="row text-center">
+				<h2>Mapa</h2><br>
+				<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6978266.5526117515!2d19.110115389665214!3d64.72226541919498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2sFinl%C3%A2ndia!5e0!3m2!1spt-PT!2sbr!4v1476470033945" frameborder="0" id="mapa" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="text-center"><h2>Números e informações</h2><br></div>
+				<div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-justify">
+					<strong>Capital:</strong> Helsinque<br><hr>
+					<strong>População:</strong> 5,5 milhões<br><hr>
+					<strong>Área:</strong> 338,424 km²<br><hr>
+					<strong>Idioma(s):</strong> Finlândes, Suéco<br><hr>
+					<strong>Fuso horário:</strong> GMT+2<br><hr>
+					<strong>Moeda:</strong> Euro (€)<br><hr>
+					<strong>Variação Cambial (Dólar):</strong>1 € = 1,09 US$<br><hr>
+					<strong>Variação Cambial (Real):</strong> 1 € = 3,48 R$
+				</div>
+				<div class="col-md-5 col-sm-12 col-xs-12 text-center">
+					<div class="hidden-md hidden-lg"><br><br></div>
+					<h2>Bandeira</h2><br>
+					<img src="images/bandeira.png" alt="Bandeira" class="img-responsive center-block" id="bandeira">
+				</div>
+			</div>
+			
+			<footer class="footer">
+				<hr />
+				<div class="row">
+					<div class="col-xs-7 col-sm-7 col-md-7">
+						<p class="pull-right text-muted">
+							Visite a Finlândia ©2016 <a href="#" id="neve"><span class="glyphicon glyphicon-asterisk"></span></a>
+						</p>
+					</div>
+					<div class="col-xs-5 col-sm-5 col-md-5"><p class="pull-right"><a href="#" id="subir">Subir <span class="caret caret-reversed"></a></p></div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

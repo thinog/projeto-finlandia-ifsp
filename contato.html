@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!-- JQuery e JS do Bootstrap -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- CSS do Bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Fonte Ubuntu -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<!-- Meu script JS/JQuery -->
+		<script src="scripts/script.js"></script>
+		<script src="scripts/formulario.js"></script>
+		<script src="scripts/snowfall.jquery.js"></script>
+		<!-- Meus estilos CSS -->
+		<link href="css/estilo.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<title>Visite a Finlândia</title>
+	</head>
+	<body>
+		<div class="cabecalho">
+			<nav class="navbar navbar-light">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#itens">
+							<span class="sr-only">Opções</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Finlandia">
+						</a>
+					</div>
+					<div class="navbar-collapse collapse navHeaderCollapse" id="itens">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="visao_geral.html">Visão Geral</a></li>
+							<li><a href="viaje.html">Viaje</a></li>
+							<li><a href="atracoes.html">Atrações</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dicas <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="dicas.html#gastronomia">Gastronomia</a></li>
+									<li><a href="dicas.html#hospedagem">Hospedagem</a></li>
+									<li><a href="dicas.html#transporte">Transporte local</a></li>
+								</ul>
+							</li>
+							<li><a href="costumes.html">Costumes</a></li>
+							<li><a href="curiosidades.html">Curiosidades</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container" id="principal">
+			<div class="row" id="div-titulo">
+				<h1 class="text-center" id="titulo">Contato</h1>
+			</div>
+			<div class="row text-center" id="descricao">
+				<div class="col-md-6 col-md-offset-3">
+					<p>Caso tenha alguma sugestão, dúvida ou tenha encontrado algum erro no nosso site, preencha e envie o formulário abaixo. Ele irá montar o e-mail e solicitar o envio através do client utilizado por você (Outlook, Thunderbird, etc.). Caso você não possua nenhum client instalado, envie suas dúvidas para o endereço <strong>visiteafinlandia@gmail.com</strong>.</p>
+				</div>
+			</div>
+			
+			<form method="post" class="row" id="contato" enctype="text/plain"> 
+				<div class="col-md-6">
+					<div class="form-group" id="div_nome">
+						<label for="nome">Nome</label>
+						<input type="text" id="nome" class="form-control" placeholder="Nome" novalidate>
+					</div>
+					<div class="form-group" id="div_email">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" class="form-control" placeholder="E-mail" novalidate>
+					</div>
+					<div class="form-group" id="div_assunto">
+						<label for="assunto">Assunto</label>
+						<select id="assunto" class="form-control" novalidate>
+							<option value="Sugestao">Sugestão</option>
+							<option value="Duvida">Dúvida</option>
+							<option value="Erro">Erro no site</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group" id="div_mensagem">
+						<label for="mensagem">Mensagem</label>
+						<textarea id="mensagem" class="form-control" placeholder="Mensagem" novalidate></textarea>
+					</div>
+				</div>
+				<div class="col-md-12 text-center">
+					<input type="submit" id="submit" class="btn btn-default btn-lg" value="Enviar">
+				</div>
+			</form><br>
+			
+			<div class="alert alert-success">
+				<strong>Pronto!</strong> Mensagem enviada.
+			</div>
+			
+			<footer class="footer">
+				<hr />
+				<div class="row">
+					<div class="col-xs-7 col-sm-7 col-md-7">
+						<p class="pull-right text-muted">
+							Visite a Finlândia ©2016 <a href="#" id="neve"><span class="glyphicon glyphicon-asterisk"></span></a>
+						</p>
+					</div>
+					<div class="col-xs-5 col-sm-5 col-md-5"><p class="pull-right"><a href="#" id="subir">Subir <span class="caret caret-reversed"></a></p></div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

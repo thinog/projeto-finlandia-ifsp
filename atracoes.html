@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!-- JQuery e JS do Bootstrap -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- CSS do Bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Fonte Ubuntu -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<!-- Meu script JS/JQuery -->
+		<script src="scripts/script.js"></script>
+		<script src="scripts/snowfall.jquery.js"></script>
+		<!-- Meus estilos CSS -->
+		<link href="css/estilo.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<title>Visite a Finlândia</title>
+	</head>
+	<body>
+		<div class="cabecalho">
+			<nav class="navbar navbar-light">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#itens">
+							<span class="sr-only">Opções</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Finlandia">
+						</a>
+					</div>
+					<div class="navbar-collapse collapse navHeaderCollapse" id="itens">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="visao_geral.html">Visão Geral</a></li>
+							<li><a href="viaje.html">Viaje</a></li>
+							<li><a href="atracoes.html">Atrações</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dicas <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="dicas.html#gastronomia">Gastronomia</a></li>
+									<li><a href="dicas.html#hospedagem">Hospedagem</a></li>
+									<li><a href="dicas.html#transporte">Transporte local</a></li>
+								</ul>
+							</li>
+							<li><a href="costumes.html">Costumes</a></li>
+							<li><a href="curiosidades.html">Curiosidades</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container" id="principal">
+			<div class="row" id="div-titulo">
+				<h1 class="text-center" id="titulo">Pontos Turísticos</h1>
+			</div>
+			<div class="row text-center" id="descricao">
+				<div class="col-md-8 col-md-offset-2">
+					<p>As atrações abaixo estão todas localizadas na capital, Helsinque, e nas suas redondezas. Há diversas outras atrações na própria capital e em diversas outras cidades, sendo a mais popular, a visita a Lapônia, que fica ao norte do país e dentro do Círculo Ártico, para se ver a Aurora Boreal e o Sol da Meia-Noite.</p>
+				</div>
+			</div>
+			<h4 class="text-center"><- Passe para os lados para ler sobre as atrações -></h4>
+			
+			<div id="atracoes" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#atracoes" data-slide-to="0" class="active"></li>
+					<li data-target="#atracoes" data-slide-to="1"></li>
+					<li data-target="#atracoes" data-slide-to="2"></li>
+					<li data-target="#atracoes" data-slide-to="3"></li>
+					<li data-target="#atracoes" data-slide-to="4"></li>
+					<li data-target="#atracoes" data-slide-to="5"></li>
+					<li data-target="#atracoes" data-slide-to="6"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/suomenlinna.jpg" alt="Helsink">
+					</div>
+					<div class="item">
+						<img src="images/catedral_helsinque.jpg" alt="Aurora">
+					</div>
+					<div class="item">
+						<img src="images/catedral_uspenski.jpg" alt="Aurora">
+					</div>
+					<div class="item">
+						<img src="images/museu_kiasma.png" alt="Aurora">
+					</div>
+					<div class="item">
+						<img src="images/museu_nacional.jpg" alt="Aurora">
+					</div>
+					<div class="item">
+						<img src="images/mercado.jpg" alt="Aurora">
+					</div>
+					<div class="item">
+						<img src="images/praca.jpg" alt="Aurora">
+					</div>
+
+				</div>
+				<a class="left carousel-control" href="#atracoes" role="button" data-slide="prev">
+					<span class="icon-prev" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="right carousel-control" href="#atracoes" role="button" data-slide="next">
+					<span class="icon-next" aria-hidden="true"></span>
+					<span class="sr-only">Próximo</span>
+				</a>
+			</div>
+			
+			<div class ="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="atracao-0">
+				<h2 class="text-left">Fortaleza de Suomenlinna</h2>
+				<!--<div class="col-md-4"><img src="images/suomenlinna.jpg" alt="Suomenlinna" class="img-responsive"></div>-->
+				<div class="text-justify">
+					<p>Um dos mais populares passeios em Helsinque é conhecer sua contribuição para o patrimônio da humanidade, a ilha-fortaleza de Suomenlinna. Por séculos, a cidade foi um ponto estratégico no Báltico, disputado por russos e suecos. Em 1748 estes últimos construíram uma série de fortificações e uma cidadela nesta ilha para proteger a cidade e o porto de Helsinque, um poderoso testemunho da arquitetura bélica da época. Não adiantou muito: em 1808 as forças do czar conquistaram toda a região. Hoje é possível visitar as guarnições, assim como uma igreja do século 19, diversos museus que contam a história do local e da arte bélica ou mesmo só ficar passeando pelo amplo parque.</p>
+					<p>Ferries partem a cada vinte minutos do porto de Helsinque, numa curta viagem de 15 a 20 minutos.</p>
+				</div>
+			</div>
+			
+			<div class ="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="atracao-1">
+				<h2 class="text-left">Catedral de Helsinque</h2>
+				<div class="text-justify">
+					<p>Um dos exemplares da belíssima arquitetura que domina a cidade desde 1852, a Catedral de Helsinque (<i>Helsingin tuomiokirkko</i> em finlandês) é uma igreja evangélica luterana da Diocese de Helsinque, localizada bem no centro da cidade.</p>
+					<p>Sua cúpula verde e alta, envolta por quatro cúpulas menores destaca-se no visual do centro de Helsinque, destacando o estilo neoclassicista utilizado na construção da catedral, em 1830. Além das cúpulas, a construção conta com duas torres sineiras e estátuas de zinco retratando os Doze Apóstolos.</p>
+					<p>Sua grandeza é visível tanto de fora quanto de dentro; o local possui espaço para até 1300 fiéis, que celebram seus encontros em meio a um altar construído em 1880, com belas estátuas de anjos, um órgão e púlpito.</p>
+					<p>Suas belezas interior e exterior atraem grande número de turistas, sendo visitada anualmente por mais de 350 mil pessoas. Com uma restauração ocorrida entre 1980 e 1990, a Catedral tem sido utilizada para serviços litúrgicos, inclusive casamentos.</p>
+				</div>
+			</div>
+			
+			<div class ="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="atracao-2">
+				<h2 class="text-left">Catedral de Uspenski</h2>
+				<div class="text-justify">
+					<p>A Catedral Uspenski é a maior igreja ortodoxa na Europa Ocidental. Por seu estilo de construção, a igreja é um dos símbolos mais claros sobre o impacto da Rússia sobre história da Finlândia. Na parte de trás da Catedral existe uma placa comemorativa ao Czar russo Alexander II (Aleksandr II Nikolaevich), que era o soberano do Grão-Ducado da Finlândia durante a construção da catedral.</p>
+					<p>Foi construída entre 1862 e 1868. Foi projetada por Aleksey Gornostajev, com base numa igreja do século 16, próximo a Moscou. Os tijolos vieram da fortaleza Bomarsund em Aland, que havia sido destruída durante a Guerra da Crimeia, em 1854.</p>
+					<p>O exterior da catedral de Uspenski não é elaboradamente decorado, mas é, no entanto, impressionante com suas paredes de tijolos de um vermelho profundo e cúpulas em forma de cebolas verdes e douradas. Há 13 cúpulas no total, representando Cristo e os doze apóstolos. Como a maioria das igrejas ortodoxas na Europa Ocidental, a catedral também impressiona por seu tamanho. A cúpula central é mantida no ar por quatro pilares de granito monolíticos.</p>
+					<p>No interior, a catedral abriga uma rica exibição de ícones e outras decorações típicas ortodoxas, incluindo um impressionante conjunto de lustres pendurados no teto abobadado. Acredita-se que um destes ícones faz milagres, entretanto, sua fama e beleza atraíram bandidos, que o roubaram em 2007.</p>
+				</div>
+			</div>
+			
+			<div class ="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="atracao-3">
+				<h2 class="text-left">Museu Kiasma de Arte Contemporânea</h2>
+				<div class="text-justify">
+					<p>Logo no primeiro quarteirão a partir do centro de Helsinque, ao longo da Rua Mannerheimintie, está o Museu de Arte Contemporânea Kiasma.</p>
+					<p>O prédio moderno estilo futurista de linhas arrojadas foi construído, entre 1993 e 1998, pelo Arquiteto norte-americano Steven Holl.</p>
+					<p>O nome Kiasma deriva de "quiasma", que corresponde a um cruzamento, especialmente a passagem de nervos óticos. E é nesse sentido que o Museu Kiasma se apresenta: a localização central do excepcional edifício, extensa rede de uma ampla variedade de parceiros, o status que detém com a exibição da coleção de Arte Contemporânea da Galeria Nacional finlandesa (fundada em 1990), pessoas, idéias e ideologias que ali se encontram e se misturam. Assim o Museu Kiasma, aliado a uma arquitetura única e bela, tem despertado interesse internacional.</p>
+					<p>O Museu de Arte Contemporânea Kiasma, que integra a Galeria Nacional da Finlândia, apresenta coleções de arte moderna, a partir dos anos 1960 e conta com espaços para instalações multimídia. É um animado centro cultural, lugar de encontro, prazer e experiência. O museu proporciona um inesquecível e fácil acesso para o vibrante mundo da arte contemporânea. Bem sucedido na sua missão, o Museu Kiasma é o mais popular na Finlândia com 200 000 visitantes anuais em média.</p>
+					<p>É possível conhecer o museu com calma e são oferecidos tours guiados e personalizados no qual o visitante determina em qual seção deseja gastar mais tempo.</p>
+				</div>
+			</div>
+			
+			<div class ="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="atracao-4">
+				<h2 class="text-left">Museu Nacional</h2>
+				<div class="text-justify">
+					<p>Outro ponto turístico em Helsinque é o Museu Nacional da Finlândia, que em seus seis complexos reúne diversas obras do país, desde a era pré-histórica, passando pela Idade Média, onde há exemplares de peças da sociedade finlandesa da época, a Era Pré-Industrial, onde o modo de vida rural destacava-se, chegando até os dias de hoje.</p>
+					<p>Localizado em um edifício que lembra um castelo medieval neorromântico, o prédio por si só já é uma atração, mas vale a pena realizar o passeio completo, conhecendo um pouco da história do país.</p>
+				</div>
+			</div>
+			
+			<div class ="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="atracao-5">
+				<h2 class="text-left">Praça do Mercado (<i>Kauppatori</i>)</h2>
+				<div class="text-justify">
+					<p>A Praça do Mercado é uma praça central em Helsinque e um dos lugares mais famosos do mercado e atrações turísticas da cidade. A Praça do Mercado está localizado perto do centro de Helsinque, no extremo leste de Esplanadi e ribeirinhos do Mar Báltico para o sul e para o leste Katajanokka. O Helsinki City Transport mantém uma ligação de ferry para todo o ano-redonda da Praça do Mercado de Suomenlinna, e no verão também há empresas privadas que prestam cruzeiros de ferry, tanto para Suomenlinna e outras ilhas vizinhas.</p>
+					<p>Da primavera ao outono, a Praça do Mercado está movimentado com a atividade com vendedores de comida finlandesa fresco e lembranças. Há também muitos cafés ao ar livre na praça. Alguns cafés também oferecem bolos de carne, e um anuncia suas tortas como sendo "o melhor no Market Square ... em Helsinque, na Finlândia ...!" O auge da popularidade da praça é no início de outubro, quando o mercado arenque anual Helsinque começa. Velhos carros americanos na praça do mercado na primeira sexta-feira de maio. Uma longa tradição na Praça do Mercado, é uma exposição de carros antigos americanos na primeira sexta-feira de cada mês. Qualquer motorista com um interesse em velhos carros americanos podem participar nesta exposição.</p>
+				</div>
+			</div>
+			
+			<div class ="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="atracao-6">
+				<h2 class="text-left">Parque Esplanadi</h2>
+				<div class="text-justify">
+					<p>Na ponta da Praça do Mercado inicia-se o Parque Esplanadi, aberto em 1812. O parque é delimitado por duas avenidas movimentadas que abrigam belíssimos prédios em estilo neo-renascentista. A área verde bem no centro de Helsinque é destino de turistas e locais, que aproveitam a tranquilidade do lugar para relaxar a qualquer hora do dia.</p>
+				</div>
+			</div>			
+			
+			<footer class="footer">
+				<hr />
+				<div class="row">
+					<div class="col-xs-7 col-sm-7 col-md-7">
+						<p class="pull-right text-muted">
+							Visite a Finlândia ©2016 <a href="#" id="neve"><span class="glyphicon glyphicon-asterisk"></span></a>
+						</p>
+					</div>
+					<div class="col-xs-5 col-sm-5 col-md-5"><p class="pull-right"><a href="#" id="subir">Subir <span class="caret caret-reversed"></a></p></div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
